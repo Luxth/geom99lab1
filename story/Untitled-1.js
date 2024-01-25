@@ -40,14 +40,14 @@ async function initMap() {
         {lat: 40.722233, lng: -73.987429},
     ];
 
-    const roadtrip = new google.maps.Polyline({
+    const myroadtrip = new google.maps.Polyline({
         path: myroadpath,
         strokeColour: "#FF0000",
         strokeOpacity: 1.0,
         strokeWeight: 2,
     });
 
-    roadtrip.setMap(map);
+    myroadtrip.setMap(map);
     
     const infoWindow = new InfoWindow();
   
