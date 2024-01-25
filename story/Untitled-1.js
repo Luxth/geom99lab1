@@ -32,7 +32,22 @@ async function initMap() {
         title: "Katz's Delicatessen",
       },
     ];
-   
+   const mypath =[
+        {lat: 40.756649, lng: -73.9888153},
+        {lat: 40.7579747, lng: -73.9855426},
+        {lat: 40.7484405, lng: -73.9856644},
+        {lat: 40.7443371, lng: -73.9920054},
+        {lat: 40.722233, lng: -73.987429},
+    ];
+
+    const roadtrip = new google.maps.Polyline({
+        path: mypath,
+        strokeColour: "#FF0000",
+        strokeOpacity: 1.0,
+        strokeWeight: 2,
+    });
+
+    roadtrip.setMap(map);
     const infoWindow = new InfoWindow();
   
    
