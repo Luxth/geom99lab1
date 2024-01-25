@@ -14,12 +14,27 @@ function initMap() {
     // Set LatLng and title text for the markers. The first marker (Hilton New York Times Square Hotel)
     // receives the initial focus when tab is pressed. Use arrow keys to
     // move between markers; press tab again to cycle through the map controls.
-    const roadtrip = [google.maps.LatLngLiteral, string] = [
-      [{ lat: 40.756649, lng: -73.9888153 }, "Hilton New York Times Square Hotel"],
-      [{ lat: 40.7579747, lng: -73.9855426 }, "Times Square"],
-      [{ lat: 40.7484405, lng: -73.9856644 }, "Empire State Building"],
-      [{ lat: 40.7443371, lng: -73.9920054 }, "2 Bros Pizza"],
-      [{ lat: 40.722233, lng: -73.987429 }, "Katz's Delicatessen"],
+    const roadtrip = [
+      {
+        position: { lat: 40.756649, lng: -73.9888153 },
+        title: "Hilton New York Times Square Hotel",
+      },
+      {
+        position: { lat: 40.7579747, lng: -73.9855426 },
+        title: "Times Square",
+      },
+      {
+        position: { lat: 40.7484405, lng: -73.9856644 },
+        title: "Empire State Building",
+      },
+      {
+        position: { lat: 40.7443371, lng: -73.9920054 },
+        title: "2 Bros Pizza",
+      },
+      {
+        position: { lat: 40.722233, lng: -73.987429 },
+        title: "Katz's Delicatessen",
+      },
     ];
     
     const newyorkpath = new google.maps.Polyline({
