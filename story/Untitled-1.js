@@ -8,29 +8,28 @@ async function initMap() {
         zoom: 13,
         center: { lat: 40.7439208, lng: -73.9971402 },
         mapId: "4504f8b37365c3d0",
-      },
-    )
+      });
     
     const roadtrip = [
       { 
-          position: lat: 40.756649, lng: -73.9888153 }, 
-          title = "Hilton New York Times Square Hotel",
+          position: {lat: 40.756649, lng: -73.9888153 }, 
+          title: "Hilton New York Times Square Hotel",
       },    
       { 
-          position: lat: 40.7579747, lng: -73.9855426 },
-          title = "Times Square",
+          position: {lat: 40.7579747, lng: -73.9855426 },
+          title: "Times Square",
       },
       { 
-          position: lat: 40.7484405, lng: -73.9856644 }, 
-          title = "Empire State Building",
+          position: {lat: 40.7484405, lng: -73.9856644 }, 
+          title: "Empire State Building",
       },
       { 
-          position: lat: 40.7443371, lng: -73.9920054 },
-          title = "2 Bros Pizza",
+          position: {lat: 40.7443371, lng: -73.9920054 },
+          title: "2 Bros Pizza",
       },
       { 
-          position: lat: 40.722233, lng: -73.987429 },
-          title = "Katz's Delicatessen",
+          position: {lat: 40.722233, lng: -73.987429 },
+          title: "Katz's Delicatessen",
       },    
     ];
     
