@@ -23,6 +23,7 @@ function initMap() {
       { 
           position: lat: 40.722233, lng: -73.987429 },
           title = "Katz's Delicatessen",
+      },    
     ];
     
     const newyorkpath = new google.maps.Polyline({
