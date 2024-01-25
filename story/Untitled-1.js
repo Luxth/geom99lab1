@@ -7,6 +7,7 @@ async function initMap() {
       {
         zoom: 13,
         center: { lat: 40.7439208, lng: -73.9971402 },
+        mapId: "4504f8b37365c3d0",
       },
     )
     
