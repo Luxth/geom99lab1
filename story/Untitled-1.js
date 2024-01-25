@@ -68,6 +68,6 @@ async function initMap() {
       });
     });
   }
-initMap();
+
   
   
