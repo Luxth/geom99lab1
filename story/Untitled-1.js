@@ -60,5 +60,6 @@ function initMap() {
       });
     });
   }
+initMap();
   
   
