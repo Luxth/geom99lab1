@@ -43,7 +43,7 @@ async function initMap() {
     const myroadtrip = new google.maps.Polyline({
         path: myroadpath,
         geodesic: true,
-        strokeColour: "#4FB06D",
+        strokeColor: "#4FB06D",
         strokeOpacity: 1.0,
         strokeWeight: 3,
     });
