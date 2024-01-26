@@ -42,9 +42,10 @@ async function initMap() {
 
     const myroadtrip = new google.maps.Polyline({
         path: myroadpath,
-        strokeColour: "#FF0000",
+        geodesic: true,
+        strokeColour: "#4FB06D",
         strokeOpacity: 1.0,
-        strokeWeight: 2,
+        strokeWeight: 3,
     });
 
     myroadtrip.setMap(map);
