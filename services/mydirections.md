@@ -10,10 +10,13 @@ Be creative and use multiple parameters from the API documentation to earn a top
 
 ```
 https://maps.googleapis.com/maps/api/directions/json
-?origin=place_id%3AChIJq6p6ZumM1YkRwlenRs5y5SY
+?departure_time=1706490000
+&origin=place_id%3AChIJq6p6ZumM1YkRwlenRs5y5SY
 &destination=place_id%3AChIJ30XmQabR1IkR6kOAU_Q9tvU
 &mode=driving
 &avoid=highways
+&avoid=tolls
+&traffic_model=best_guess
 &waypoints=place_id%3AChIJ71ijPAEd1YkRAs73CuBfEX4%7Cplace_id%3AChIJy_GF1eTW1IkRTQMoUSUlmOM%7Cplace_id%3AChIJzdqWrfHZ1IkR2LWLAmB6GZ4
 &key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 ```
