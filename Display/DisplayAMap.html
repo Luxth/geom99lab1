@@ -1,9 +1,10 @@
+<!---Reference if this code is from https://developers.arcgis.com/javascript/latest/tutorials/display-a-map/  ---->
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset = "utf-8" />
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-		<title> ArcGIS Maps SDK for Javascript Tutorials: Display a map</title>
+		<title>Display a map</title>
 		
 		
 		<style>
@@ -16,7 +17,7 @@
 				width: 100%;
 				
 			}
-			
+			/* The height and weight of the viewDIV takes up the whole screen */
 		</style>
 		
 		<link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
@@ -26,11 +27,11 @@
 			require(["esri/config", "esri/Map", "esri/views/MapView"], function(esriConfig, Map, MapView) {
 			
 				esriConfig.apikey = "AAPK22a8f390434043a3a951014612145ec6mvegmUhqJPKCpZOxXOIGnUlwaEkYDzy3fCOwv7TS7HkRVL6uLrWLC4zLyJGGd70X";
-				
+				//This is the API KEY
 				const map = new Map ({
 					basemap: "arcgis-topographic"
 				});
-				
+				//Calls in the mayview from arcgis
 				const view = new MapView({
 					map: map,
 					center: [-118.805, 34.027],
@@ -45,6 +46,7 @@
 	</head>
 	<body>
 		<div id="viewDiv"></div>
+		<!----This is where it gets called the viewDiv ---->
 	</body>
 	
 </html>
