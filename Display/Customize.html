@@ -1,3 +1,4 @@
+<!---Reference of this webpage is https://developers.arcgis.com/javascript/latest/tutorials/add-a-point-line-and-polygon/ --->
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +13,11 @@
       height: 100%;
       width: 100%;
     }
+	/*The height and weight is set 100 to take the whole screen page */
   </style>
   <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
   <script src="https://js.arcgis.com/4.28/"></script>
+	<!-- This is where the stylesshe is reference from --->
   <script>
 
   require([
@@ -28,22 +31,22 @@
     ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer) {
 
   esriConfig.apiKey = "AAPK22a8f390434043a3a951014612145ec6mvegmUhqJPKCpZOxXOIGnUlwaEkYDzy3fCOwv7TS7HkRVL6uLrWLC4zLyJGGd70X";
-
+// This is the API Key
   const map = new Map({
-    basemap: "arcgis-topographic" // basemap styles service
+    basemap: "osm" 
   });
 
   const view = new MapView({
     map: map,
-    center: [15.384636,43.978734], //Longitude, latitude
+    center: [15.384636,43.978734], 
     zoom: 17,
     container: "viewDiv"
  });
-
+// This is heart shaped island location
  const graphicsLayer = new GraphicsLayer();
  map.add(graphicsLayer);
 
- const point = { //Create a point
+ const point = { 
     type: "point",
     longitude: 15.384636,
     latitude: 43.978734
@@ -63,27 +66,27 @@
  });
  graphicsLayer.add(pointGraphic);
 
- // Create a line geometry
+ 
  const polyline = {
     type: "polyline",
     paths: [
-        [15.3836210, 43.9766065], //Longitude, latitude
-        [15.3853805, 43.9774794], //Longitude, latitude
-        [15.3862817, 43.9785223],  //Longitude, latitude
-		[15.3865178, 43.9795110],  //Longitude, latitude
-		[15.3860993, 43.9803144],  //Longitude, latitude
-		[15.3849192, 43.9803993],  //Longitude, latitude
-		[15.3841360, 43.9801213],  //Longitude, latitude
-		[15.3835673, 43.9796192],  //Longitude, latitude
-		[15.3831060, 43.9791325],  //Longitude, latitude
-		[15.3817971, 43.9796810],  //Longitude, latitude
-		[15.3807027, 43.9795496],  //Longitude, latitude
-		[15.3801878, 43.9790475],  //Longitude, latitude
-		[15.3802843, 43.9783523],  //Longitude, latitude
-		[15.3810675, 43.9777730],  //Longitude, latitude
-		[15.3819473, 43.9776571],  //Longitude, latitude
-		[15.3827198, 43.9773095],  //Longitude, latitude
-		[15.3835673, 43.9766142]  //Longitude, latitude
+        [15.3836210, 43.9766065], 
+        [15.3853805, 43.9774794], 
+        [15.3862817, 43.9785223],  
+		[15.3865178, 43.9795110],  
+		[15.3860993, 43.9803144],  
+		[15.3849192, 43.9803993],  
+		[15.3841360, 43.9801213],  
+		[15.3835673, 43.9796192],  
+		[15.3831060, 43.9791325],  
+		[15.3817971, 43.9796810],  
+		[15.3807027, 43.9795496],  
+		[15.3801878, 43.9790475],  
+		[15.3802843, 43.9783523],  
+		[15.3810675, 43.9777730],  
+		[15.3819473, 43.9776571],  
+		[15.3827198, 43.9773095],  
+		[15.3835673, 43.9766142]  
 		
     ]
  };
