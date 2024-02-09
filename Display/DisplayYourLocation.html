@@ -1,9 +1,10 @@
+<!---- Reference of this code is from https://developers.arcgis.com/javascript/latest/tutorials/display-your-location/ ---->
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset = "utf-8" />
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-		<title> ArcGIS Maps SDK for Javascript Tutorials: Display a map</title>
+		<title>Display a Location</title>
 		
 		
 		<style>
@@ -16,7 +17,7 @@
 				width: 100%;
 				
 			}
-			
+			/*The height and weight are 100% meaning it will take the whole web page screen */
 		</style>
 		
 		<link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
@@ -26,11 +27,11 @@
 			require(["esri/config", "esri/Map", "esri/views/MapView", "esri/widgets/Locate", "esri/widgets/Track", "esri/Graphic"], function(esriConfig, Map, MapView, Locate, Track, Graphic) {
 			
 				esriConfig.apikey = "AAPK22a8f390434043a3a951014612145ec6mvegmUhqJPKCpZOxXOIGnUlwaEkYDzy3fCOwv7TS7HkRVL6uLrWLC4zLyJGGd70X";
-				
+				// This is the API key
 				const map = new Map ({
 					basemap: "arcgis-navigation"
 				});
-				
+				// This basemape is called arcgis navigation and gets called from arcgis 
 				const view = new MapView({
 					map: map,
 					center: [-40, 28],
@@ -56,7 +57,7 @@
 				});
 				view.ui.add(track, "top-left");
 				
-				
+				// This is where the tracker button is told to be placed at the top left corner
 				const locate = new Locate({
 					view: view, 
 					useHeadingEnabled: false, 
@@ -66,7 +67,7 @@
 				
 				});
 				view.ui.add(locate, "top-left");
-				
+				// The locate button will be found at the top left corner of the web page
 				
 			});
 		</script>
@@ -74,6 +75,7 @@
 	</head>
 	<body>
 		<div id="viewDiv"></div>
+		<!----This is where the viewDiv gets called ---->
 	</body>
 	
 </html>
